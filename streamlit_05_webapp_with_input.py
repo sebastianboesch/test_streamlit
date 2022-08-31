@@ -11,14 +11,6 @@ We have trained several models to predict the price of a house based on features
 """)
 
 
-# solve path issue
-
-from pathlib import Path
-
-trained_pipe_knn.sav = Path(__file__).parents[1] / 'trained_pipe_knn.sav'
-
-
-
 # this is a interactive model
 	
 import pickle
