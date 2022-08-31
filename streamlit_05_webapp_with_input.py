@@ -14,7 +14,7 @@ We have trained several models to predict the price of a house based on features
 # this is a interactive model
 	
 import pickle
-model = pickle.load(open('https://github.com/sebastianboesch/test_streamlit/blob/main/trained_pipe_knn.sav', 'rb'))
+model = pickle.load(open('https://www.lookon.de/data_science_csv/trained_pipe_knn.sav', 'rb'))
  
 LotArea = st.number_input("Lot Area")
 TotalBsmtSF = st.number_input("Basement Square Feet")
