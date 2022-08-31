@@ -11,10 +11,19 @@ We have trained several models to predict the price of a house based on features
 """)
 
 
+# solve path issue
+
+from pathlib import Path
+
+trained_pipe_knn.sav = Path(__file__).parents[1] / 'trained_pipe_knn.sav'
+
+To e
+
+
 # this is a interactive model
 	
 import pickle
-model = pickle.load(open('https://www.lookon.de/data_science_csv/trained_pipe_knn.sav', 'rb'))
+model = pickle.load(open('trained_pipe_knn.sav', 'rb'))
  
 LotArea = st.number_input("Lot Area")
 TotalBsmtSF = st.number_input("Basement Square Feet")
