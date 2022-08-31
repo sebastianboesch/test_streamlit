@@ -17,7 +17,6 @@ from pathlib import Path
 
 trained_pipe_knn.sav = Path(__file__).parents[1] / 'trained_pipe_knn.sav'
 
-To e
 
 
 # this is a interactive model
